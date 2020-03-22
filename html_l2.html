@@ -36,26 +36,6 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-localStorage.setItem("latitude", position.coords.latitude);
-
-localStorage.setItem("longitude", position.coords.longitude);
-
-document.getElementById("display").innerHTML = localStorage.getItem("latitude");
-document.getElementById("display").innerHTML = localStorage.getItem("longitude");
-
-document.write(position.coords.latitude)
-document.write(position.coords.longitude)
-
-
-var variable1 = document.getElementById("demo1"); 
-        function getlocation(){ 
-                navigator.geolocation.getCurrentPosition(showLoc); 
-        } 
-        function showLoc(pos){ 
-                variable1.innerHTML = "Latitude: " + pos.coords.latitude +  
-                "<br>Longitude: " + pos.coords.longitude;  
-            } 
-
 
 
 </script>
