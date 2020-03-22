@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html>
 
@@ -68,27 +66,23 @@ function showPosition(position) {
 <img id="drag1" src="download.gif" draggable="true" ondragstart="drag(event)" width="400" height="300">
 
 
-        <p>Display Latitude and Longitude</p> 
-        <button class = "geeks" onclick="getlocation()">Click</button> 
-        <p id="demo1"></p> 
-        <script> 
-        var variable1 = document.getElementById("demo1"); 
-        function getlocation(){ 
-                navigator.geolocation.getCurrentPosition(showLoc); 
+<p>Display Latitude and Longitude</p> 
+<button  onclick="getlocation()">Click</button> 
+<p id="demo1"></p> 
+<script> 
+    var variable1 = document.getElementById("demo1"); 
+    function getlocation(){ 
+            navigator.geolocation.getCurrentPosition(showLoc); 
         } 
-        function showLoc(pos){ 
-                variable1.innerHTML = "Latitude: " + pos.coords.latitude +  
-                "<br>Longitude: " + pos.coords.longitude;  
+    function showLoc(pos){ 
+            variable1.innerHTML = "Latitude: " + pos.coords.latitude +  
+            "<br>Longitude: " + pos.coords.longitude;  
             } 
-			
-			
+						
 localStorage.setItem("latitude", position.coords.latitude);
-
 localStorage.setItem("longitude", position.coords.longitude);
-        </script> 
+</script> 
 
 
 </body>
 </html>
-
-
